@@ -1,0 +1,33 @@
+## Interface: 30300
+## Title: Tactics Coach
+## Notes: Learn your class rotation, build and share your own, and measure which one deals more damage. / Aprende la rotación de tu clase, crea y comparte las tuyas, y mide cuál hace más daño.
+## Author: Stormrage
+## Version: 1.0.0
+## SavedVariables: TacticsCoachDB, StormrageRotacionesDB
+## SavedVariablesPerCharacter: TacticsCoachCharDB, StormrageRotacionesCharDB
+
+Core.lua
+Locales.lua
+Expr.lua
+Format.lua
+State.lua
+Engine.lua
+Library.lua
+Model.lua
+Rotations\DeathKnight.lua
+Rotations\Druid.lua
+Rotations\Hunter.lua
+Rotations\Mage.lua
+Rotations\Paladin.lua
+Rotations\Priest.lua
+Rotations\Rogue.lua
+Rotations\Shaman.lua
+Rotations\Warlock.lua
+Rotations\Warrior.lua
+Meter.lua
+Lab.lua
+Share.lua
+UI.lua
+Config.lua
+Builder.lua
+Options.lua
