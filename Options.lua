@@ -251,5 +251,25 @@ function Options.create()
 
   panel:SetScript("OnShow", Options.sync)
   InterfaceOptions_AddCategory(panel)
-  createMinimapButton()
+  -- En el menu del addon Stormrage si esta instalado; si no, boton propio en el minimapa.
+  local hub = type(Stormrage) == "table" and Stormrage.Register and Stormrage.Register({
+    name = "Tactics Coach",
+    icon = "Interface\\Icons\\INV_Misc_Book_11",
+    description = L.hubDesc,
+    onClick = function(which)
+      if which == "RightButton" then Options.open() else ns.Config.toggle() end
+    end,
+    tooltip = function(tt)
+      local rot = ns.Library.active()
+      if rot then tt:AddLine(rot.name, 0.4, 0.8, 1) end
+      local dmg, dps, since = ns.Meter.sessionStats()
+      if dmg > 0 then
+        tt:AddLine(L.tipSession:format(date("%H:%M", since), ns.fmt(dmg), ns.fmt(dps)), 1, 1, 1)
+      end
+      tt:AddLine(L.tipClick, 0.8, 0.8, 0.8)
+      tt:AddLine(L.tipRightClick, 0.8, 0.8, 0.8)
+    end,
+    actions = { { text = L.hubOptions, func = function() Options.open() end } },
+  })
+  if not hub then createMinimapButton() end
 end

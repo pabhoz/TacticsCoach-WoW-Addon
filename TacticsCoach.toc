@@ -2,7 +2,8 @@
 ## Title: Tactics Coach
 ## Notes: Learn your class rotation, build and share your own, and measure which one deals more damage. / Aprende la rotación de tu clase, crea y comparte las tuyas, y mide cuál hace más daño.
 ## Author: Stormrage
-## Version: 1.0.0
+## Version: 1.0.1
+## OptionalDeps: Stormrage
 ## SavedVariables: TacticsCoachDB, StormrageRotacionesDB
 ## SavedVariablesPerCharacter: TacticsCoachCharDB, StormrageRotacionesCharDB
 

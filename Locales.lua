@@ -278,6 +278,8 @@ description:
   tipSession = "Session (since %s): %s · %s DPS",
   tipClick = "Click: rotations",
   tipRightClick = "Right-click: options",
+  hubDesc = "Learn your class rotation",
+  hubOptions = "Options",
   tipDragMinimap = "Drag to move it",
 }
 
@@ -541,6 +543,8 @@ descripcion:
   tipSession = "Sesión (desde %s): %s · %s DPS",
   tipClick = "Clic: rotaciones",
   tipRightClick = "Clic derecho: opciones",
+  hubDesc = "Aprende la rotación de tu clase",
+  hubOptions = "Opciones",
   tipDragMinimap = "Arrastra para moverlo",
 }
 
